@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+  {% include head.html %}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/stylesheets/admin.css" | relative_url }}">
+  <body class="white-bg">
+    {% include header.html %}
+    <div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
+      {{ content }}
+      {% include footer.html %}
+    </div>
+    <div id="video_modal" class="modal fade" role="dialog">
+      <div class="modal-dialog model-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
+          </div>
+        </div>
+      </div>
+  </div>
+    {% include sidebar.html %}
+  </body>
+  <script type="text/javascript" src="/assets/javascripts/jquery-1.9.1.min.js"></script>
+  <script type="text/javascript" src="{{ "/assets/javascripts/admin.js" }}"></script>
+</html>
