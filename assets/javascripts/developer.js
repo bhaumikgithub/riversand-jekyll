@@ -93,7 +93,7 @@ $(document).ready(function(){
 	var getSNH = $('.page-wapper').height();
 	//alert(getSNH);
 	if($(window).width() > 768){
-		$('.side-nav').css({'min-height':getSNH-20});
+		// $('.side-nav').css({'min-height':getSNH-20});
 	}
 	//
 	$('select').selectric();
