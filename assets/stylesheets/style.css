@@ -1898,6 +1898,7 @@ ul.sp-ul > li li  a{
 	display:flex;
 }
  @media print {
+  .left-side { display: none }
   .side-nav { display:none; }
   .header_test { display: none; }
   .site-footer { display: none; }
