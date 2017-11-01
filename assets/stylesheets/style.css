@@ -1897,3 +1897,10 @@ ul.sp-ul > li li  a{
 .make-same{
 	display:flex;
 }
+ @media print {
+  .side-nav { display:none; }
+  .header_test { display: none; }
+  .site-footer { display: none; }
+  .custom-left-side { display: none; }
+  .custom-right-side { display: none; }
+}
