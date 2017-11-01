@@ -25,16 +25,16 @@ layout: super_admin/super_admin
           </p>
           <a href="#">Learn More</a>
           </figcaption>
-          <figure><img src="assets/images/cardgraphic.svg"></figure>
+          <figure><img src="{{"assets/images/cardgraphic.svg" | absolute_url }}"></figure>
         </div>
 
         <div class="nav-holder">
-          <div class="nav-items">
+          <div class="nav-items super-admin-blocks">
             <div data-id="developers-users">
               <div class="info">
                 <div class="pull-right">
                   <h2>Developers</h2>
-                  <span><img src="assets/images/nav-arrow.png" height="32" width="32"></span>
+                  <span><img src="{{"assets/images/nav-arrow.png" | absolute_url }}" height="32" width="32"></span>
                 </div>
               </div>
               <div class="big-info">
@@ -45,7 +45,7 @@ layout: super_admin/super_admin
                     <li>Building functionality and UI components using Riversand Data Platform services.</li>
                     <li>Integrating all business processes and making sure all downstream systems can establish communication via Restful APIs.</li>
                   </ul>
-                  <a href="developers.html">Learn More</a>
+                  <a id="developer-link" class="super-admin-links" href="{{"/developer" | absolute_url}}" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ layout: super_admin/super_admin
               <div class="info">
                 <div class="pull-right">
                   <h2>Business<br>Users</h2>
-                  <span><img src="assets/images/nav-arrow.png" width="32" height="32"></span>
+                  <span><img src="{{"assets/images/nav-arrow.png" | absolute_url }}" width="32" height="32"></span>
                 </div>
               </div>
               <div class="big-info">
@@ -64,7 +64,7 @@ layout: super_admin/super_admin
                     <li>Introducing new products to the consumers.</li>
                     <li>Managing, maintaining, and operating the on-boarding of product content.</li>
                   </ul>
-                  <a href="business_users.html">Learn More</a>
+                  <a id="manager-link" class="super-admin-links" href="business_users.html" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>
@@ -72,7 +72,7 @@ layout: super_admin/super_admin
               <div class="info">
                 <div class=" pull-right">
                   <h2>Business<br>Admins</h2>
-                  <span><img src="assets/images/nav-arrow.png" width="32" height="32"></span>
+                  <span><img src="{{"assets/images/nav-arrow.png" | absolute_url }}" width="32" height="32"></span>
                 </div>
               </div>
               <div class="big-info">
@@ -85,7 +85,7 @@ layout: super_admin/super_admin
                     <li>Preparing and loading data model</li>
                     <li>Importing and exporting of data.</li>
                   </ul>
-                  <a href="business_admins.html">Learn More</a>
+                  <a id="admin-link" class="super-admin-links" href="business_admins.html" target="_blank">Learn More</a>
                 </div>
               </div>
             </div>

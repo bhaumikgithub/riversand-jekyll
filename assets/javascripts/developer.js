@@ -1,37 +1,22 @@
-document.write('<script type="text/javascript" src="/assets/javascripts/owl.carousel.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/tether.min.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/bootstrap.min.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery.meanmenu.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery.selectric.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/easyResponsiveTabs.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery-scrolltofixed.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/cascadingDivs.min.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery.matchHeight.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery-equal-height.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/jquery.mCustomScrollbar.concat.min.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/accordion-main.js"></script>');
-document.write('<script type="text/javascript" src="/assets/javascripts/menu.js"></script>');
-
-
 $(document).ready(function(){
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
 		meanMenuContainer   : '#hand-over'
 	});*/
-    
+
 	var pushLeft = new Menu({
         wrapper: '#o-wrapper',
         type: 'push-left',
 		menuOpenerClass: '.c-button',
 		maskId: '#c-mask'
     });
-    var pushLeftBtn = document.querySelector('#c-button--push-left');
-      
-    pushLeftBtn.addEventListener('click', function(e) {
-        e.preventDefault;
-        pushLeft.open();
-    });
+    // var pushLeftBtn = document.querySelector('#c-button--push-left');
+
+    // pushLeftBtn.addEventListener('click', function(e) {
+    //     e.preventDefault;
+    //     pushLeft.open();
+    // });
 	$('.play-bt').click(function(event){
 		event.preventDefault()
 		var getid = $(this).attr('data-url');

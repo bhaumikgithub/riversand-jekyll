@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
-  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
-  <link rel="stylesheet" href="{{ "/assets/stylesheets/developer.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
+  <link rel="stylesheet" href="{{ "/assets/stylesheets/developer.css" | absolute_url }}">
   <body class="white-bg">
-    {% include header.html %}
+    <!-- {% include header.html %} -->
     <div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
       {{ content }}
       {% include footer.html %}
@@ -20,6 +20,19 @@
     </div>
     {% include sidebar.html %}
   </body>
-  <script type="text/javascript" src="/assets/javascripts/jquery-1.9.1.min.js"></script>
-  <script type="text/javascript" src="{{ "/assets/javascripts/developer.js" }}"></script>
+  <script type="text/javascript" src="{{ "/assets/javascripts/jquery-1.9.1.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/owl.carousel.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/tether.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/bootstrap.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery.meanmenu.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery.selectric.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/easyResponsiveTabs.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery-scrolltofixed.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/cascadingDivs.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery.matchHeight.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery-equal-height.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery.mCustomScrollbar.concat.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/accordion-main.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/menu.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{ "/assets/javascripts/developer.js" | absolute_url }}"></script>
 </html>
