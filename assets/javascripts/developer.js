@@ -1,4 +1,39 @@
+function disablePrev(){
+	if($(this).parent().prev('li').length > 0)
+		$('.prev').css('pointer-events', 'visible');
+	else
+		$('.prev').css('pointer-events', 'none');
+}
+function disableNext(){
+	if($(this).parent().next('li').length > 0)
+		$('.next').css('pointer-events', 'visible');
+	else
+		$('.next').css('pointer-events', 'none');
+}
+function activeDeactiveClass() {
+	$('.auth-service li').each(function(i)
+	{
+   		$(this).find('a').removeClass('active');
+	});
+}
 $(document).ready(function(){
+	$('.before_you_begin').addClass('active')
+	$('.prev').css('pointer-events', 'none');
+
+	$('.before_you_begin, .request_headers, .authentication_token, .api_request').click(function(event) {
+		// debugger
+		activeDeactiveClass();
+		disablePrev.apply(this);
+		disableNext.apply(this)
+		$(this).addClass('active');
+	});
+	$('.prev, .next').click(function(){
+		// debugger
+		if($(this).hasClass('prev'))
+			$("ul.auth-service li a.active").parent().prev('li').find('a').trigger('click');
+		else
+			$("ul.auth-service li a.active").parent().next('li').find('a').trigger('click');
+	})
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
