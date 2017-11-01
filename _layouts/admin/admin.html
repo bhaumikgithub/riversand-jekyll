@@ -2,24 +2,25 @@
 <html lang="{{ page.lang | default: site.lang | default: "en" }}">
   {% include head.html %}
   <link rel="stylesheet" href="{{ "/assets/main.css" | absolute_url }}">
-  <link rel="stylesheet" href="{{ "/assets/stylesheets/manager.css" | absolute_url }}">
-  <body class="inner-bg">
+  <link rel="stylesheet" href="{{ "/assets/stylesheets/admin.css" | absolute_url }}">
+  <body class="white-bg">
+    <!-- {% include header.html %} -->
     <div class="page-wapper give-height o-wrapper no-paading-top" id="o-wrapper">
       {{ content }}
       {% include footer.html %}
     </div>
     <div id="video_modal" class="modal fade" role="dialog">
-        <div class="modal-dialog model-lg">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <iframe allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
-                </div>
-            </div>
+      <div class="modal-dialog model-lg">
+        <div class="modal-content">
+          <div class="modal-body">
+            <iframe allowfullscreen="" width="100%" height="400" frameborder="0"></iframe>
+          </div>
         </div>
-    </div>
+      </div>
+  </div>
     {% include sidebar.html %}
   </body>
-  <script type="text/javascript" src="{{ "/assets/javascripts/jquery-1.9.1.min.js" | absolute_url}}"></script>
+  <script type="text/javascript" src="{{"/assets/javascripts/jquery-1.9.1.min.js" | absolute_url}}"></script>
   <script type="text/javascript" src="{{"/assets/javascripts/owl.carousel.js" | absolute_url}}"></script>
   <script type="text/javascript" src="{{"/assets/javascripts/tether.min.js" | absolute_url}}"></script>
   <script type="text/javascript" src="{{"/assets/javascripts/bootstrap.min.js" | absolute_url}}"></script>
@@ -33,6 +34,5 @@
   <script type="text/javascript" src="{{"/assets/javascripts/jquery.mCustomScrollbar.concat.min.js" | absolute_url}}"></script>
   <script type="text/javascript" src="{{"/assets/javascripts/accordion-main.js" | absolute_url}}"></script>
   <script type="text/javascript" src="{{"/assets/javascripts/menu.js" | absolute_url}}"></script>
-  <script type="text/javascript" src="{{"/assets/javascripts/jquery.mCustomScrollbar.concat.min.js" | absolute_url}}"></script>
-  <script type="text/javascript" src="{{ "/assets/javascripts/manager.js" | absolute_url }}"></script>
+  <script type="text/javascript" src="{{ "/assets/javascripts/admin.js" | absolute_url }}"></script>
 </html>
