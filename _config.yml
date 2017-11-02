@@ -29,6 +29,8 @@ markdown: kramdown
 # theme: minima
 plugins:
   - jekyll-feed
+  - jekyll-assets
+  - jekyll-pdf
 permalink: pretty
 
 # Exclude from processing.

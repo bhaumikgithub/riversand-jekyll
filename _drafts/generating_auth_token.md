@@ -2,6 +2,8 @@
 layout: drafts/draft
 title:  "Generating authentication token"
 permalink: docs/generating_auth_token
+pdf: true
+pdf_layout: pdf
 ---
 <div class="full-box">
   <div class="loop-box">

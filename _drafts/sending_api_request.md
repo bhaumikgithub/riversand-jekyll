@@ -2,6 +2,8 @@
 layout: drafts/draft
 title:  "Sending an API request"
 permalink: docs/sending_api_request
+pdf: true
+pdf_layout: pdf
 ---
 <div class="full-box">
   <div class="loop-box">

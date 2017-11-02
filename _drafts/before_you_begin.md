@@ -1,7 +1,9 @@
 ---
 layout: drafts/draft
 title:  "Before you begin"
-permalink: docs/before_you_begin
+permalink: /docs/before_you_begin
+pdf: true
+pdf_layout: pdf
 ---
 <div class="full-box">
   <div class="loop-box">
