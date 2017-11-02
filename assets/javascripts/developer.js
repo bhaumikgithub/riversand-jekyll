@@ -1,14 +1,18 @@
 $(document).ready(function(){
-	var current_location = window.location.href
+	var current_location = window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "/")
 	$("a[href='"+current_location+"']").addClass("active")
 	$('.prev, .next').click(function(){
 		if($(this).hasClass('prev')){
-			var next = $("ul.auth-service li a.active").parent().prev('li').find('a').attr('href')
+			var prev = $("ul.auth-service li a.active").parent().prev('li').find('a').attr('href')
+			if(prev == undefined)
+				return false
 			$("ul.auth-service li a.active").parent().prev('li').find('a').trigger('click');
-			$(this).attr("href", next)
+			$(this).attr("href", prev)
 		}
 		else{
 			var next = $("ul.auth-service li a.active").parent().next('li').find('a').attr('href')
+			if(next == undefined)
+				return false
 			$("ul.auth-service li a.active").parent().next('li').find('a').trigger('click');
 			$(this).attr("href", next)
 		}
