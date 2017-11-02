@@ -13,6 +13,14 @@ $(document).ready(function(){
 			$(this).attr("href", next)
 		}
 	})
+	var height = $("#header").height();
+
+	$(".arrow_box > ul > li > a").on("click", function (e) {
+	    e.preventDefault();
+	    $("body, html").animate({
+	        scrollTop: $($(this).attr('href')).offset().top - height
+	    });
+	});
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
