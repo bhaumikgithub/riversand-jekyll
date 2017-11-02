@@ -25,6 +25,7 @@ $(document).ready(function(){
 	// 	return false;
 	// 	// $(this).attr("href",  $("ul.auth-service li a.active").attr('href'))
 	// })
+
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",
