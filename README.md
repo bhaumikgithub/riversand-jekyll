@@ -1,2 +1,3 @@
-*How to run*
-sh startscript.sh
+**How to run**
+
+ - sh startscript.sh
