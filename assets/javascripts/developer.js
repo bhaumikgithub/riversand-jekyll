@@ -17,6 +17,15 @@ $(document).ready(function(){
 			$(this).attr("href", next)
 		}
 	})
+	// var height = $("#header").height();
+	var height = $("#header").height();
+
+	$(".arrow_box > ul > li > a").on("click", function (e) {
+	    e.preventDefault();
+	    $("body, html").animate({
+	        scrollTop: $($(this).attr('href')).offset().top - height
+	    });
+	});
 
 	// $('.pdf-bt').click(function(e){
 	// 	var url = $("ul.auth-service li a.active").attr('href').split(".html")[0]

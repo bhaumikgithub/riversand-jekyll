@@ -1905,4 +1905,5 @@ ul.sp-ul > li li  a{
   .site-footer { display: none; }
   .custom-left-side { display: none; }
   .custom-right-side { display: none; }
+  header { display: none; }
 }
