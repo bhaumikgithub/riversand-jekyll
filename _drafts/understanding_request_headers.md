@@ -2,6 +2,8 @@
 layout: drafts/draft
 title:  "Understanding the request headers"
 permalink: docs/understanding_request_headers
+pdf: true
+pdf_layout: pdf
 ---
 <div class="full-box">
   <div class="loop-box">

@@ -17,6 +17,14 @@ $(document).ready(function(){
 			$(this).attr("href", next)
 		}
 	})
+
+	// $('.pdf-bt').click(function(e){
+	// 	var url = $("ul.auth-service li a.active").attr('href').split(".html")[0]
+	// 	// $(this).attr("href", url)
+	// 	window.open(url)
+	// 	return false;
+	// 	// $(this).attr("href",  $("ul.auth-service li a.active").attr('href'))
+	// })
 	////////////////////
 	/*$('#desktopnemu').meanmenu({
 		meanScreenWidth     : "800",

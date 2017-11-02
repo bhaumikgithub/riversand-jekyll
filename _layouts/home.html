@@ -9,6 +9,7 @@ layout: super_admin/super_admin
 
       <h2>
         <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
+        <a class="post-link" href="{{ post.pdf_url | relative_url }}">{{ post.title | escape }}</a>
       </h2>
     </li>
   {% endfor %}
