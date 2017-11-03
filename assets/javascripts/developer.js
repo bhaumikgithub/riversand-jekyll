@@ -1,6 +1,11 @@
 $(document).ready(function(){
-	var current_location = window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "/")
-	$("a[href='"+current_location+"']").addClass("active")
+	if(window.location.search != ""){
+		var current_page = window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "/").split("=").pop().split(".html")[0]
+		$("a[data-attribute-page='" + current_page + "']").addClass("active")
+	}else{
+		var current_page = window.location.href.replace(/^(?:\/\/|[^\/]+)*\//, "/")
+		$("a[href='" + current_page + "']").addClass("active")
+	}
 	$('.prev, .next').click(function(){
 		if($(this).hasClass('prev')){
 			var prev = $("ul.auth-service li a.active").parent().prev('li').find('a').attr('href')
